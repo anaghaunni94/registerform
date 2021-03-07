@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <h1>Registration form</h1>
+    <link rel="stylesheet" type="text/css" href="regis.css">
+</head>
+<body>
+    <!--name field-->
+    <form action="regis.html" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name1" id="name" placeholder="name"><br>
+         <!--address field-->
+        <label for="addr">Address</label>
+        <textarea cols="3" rows="3" id="addr" name="add"></textarea><br>
+         <!--gender field-->
+         <label for="gen">Gender</label>
+        <input type="radio" name="ra" id="gen">male
+        <input type="radio" name="ra" id="gen">female
+        <input type="radio" name="ra" id="gen">other<br>
+         <!--qualification field-->
+        <label for="qual">qualification</label>
+        <select id="qual">
+            <option>Bsc</option>
+            <option>Btech</option>
+            <option>Bpharm</option>
+            <option>BED</option>
+        </select><br>
+         <!--college field-->
+        <label for="clg">college</label>
+        <input type="text" id="dtl" list="dtll">
+        <datalist id="dtll">
+            <option>IIT bang</option>
+            <option>NIT mad</option>
+            <option>MG clg</option>
+            <option>MA clg</option> 
+        </datalist><br>
+        <!--skills field-->
+        <label for="skill">passout year</label>
+        <input type="checkbox" id="skill" name="s1">communication
+        <input type="checkbox" id="skill" name="s1">interpersonal
+        <input type="checkbox" id="skill" name="s1">leadership<br>
+         <!--paassout yr field-->
+        <label for="yr">passout year</label>
+        <input type="number" id="yr" min="2016" max="2020" required step="3"><br>
+         <!--username field-->
+        <label for="user">username</label>
+        <input type="text" name="user" id="user" placeholder="username" minlength="6" maxlength="12" required><br>
+         <!--pss field-->
+        <label for="pass">password</label>
+        <input type="password" name="pass" id="pass" placeholder="password" required pattern="[0-9a-zA-Z]+"><br>
+         <!--con pass field-->
+        <label for="conp">confirm password</label>
+        <input type="password" name="pass" id="conp" placeholder="password" required pattern="[0-9a-zA-Z]+"><br>
+        <!--email field-->
+        <label for="mail">email-id</label>
+        <input type="email" name="em" id="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
+        <!--register-->
+        <input type="submit" name="sub" id="submit" value="submit"><br>
+    
+    </form>
+    <!--<video src="https://www.youtube.com/watch?v=dtF_ot2Zkfs&list=PLhOYRw2LCXIb5UJHzKgM5g-t9R74FGV6e&index=1" width="350px" height="420px" controls>not supported</video>-->
+</body>
+</html>
